@@ -1,1 +1,15 @@
-//starter project
+const express = require("express");
+const port = 3000;
+
+const app = express();
+
+app.use(express.static(__dirname + "/public"));
+
+app.get("/", (req, res) => {
+	res.sendFile(__dirname + "/index.html");
+	res.send("test");
+});
+
+app.listen(port, () => {
+	console.log(`Server is running on port ${port}`);
+});
