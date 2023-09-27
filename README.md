@@ -1,1 +1,1 @@
-my own cv project, I will update REAME soon!
+my own cv project, I will update README soon!
