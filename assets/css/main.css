@@ -1,7 +1,16 @@
-* {
-  padding: 0;
-  margin: 0;
+body {
   box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  color: #444444;
+}
+
+header {
+  background-color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #282a48;
 }
 
 .fontImportantText {
@@ -44,21 +53,47 @@
   font-size: 50px;
 }
 
+#bootstrapProgress .progress-bar {
+  background-color: purple;
+}
+#jsProgress .progress-bar {
+  background-color: rgb(170, 170, 84);
+}
+#reactProgress .progress-bar {
+  background-color: rgb(24, 162, 222);
+}
+#wordpressProgress .progress-bar {
+  background-color: rgb(34, 34, 34);
+}
+
 @media (max-width: 768px) {
   div #Home {
     text-align: center;
   }
 
   .slider-text {
-    font-size: 24px;
+    font-size: 50px;
   }
 
   .slider-text-job {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .img-responsive {
     max-width: 100%;
     height: auto;
+    border-radius: 100%;
+  }
+
+  #main-nav {
+    position: static;
+  }
+
+  #Home .py-5,
+  #Home .mt-5 e {
+    padding-top: 100px !important;
+    padding-bottom: 0 !important;
+    margin-top: 100px !important;
+    margin-bottom: 0 !important;
   }
 }
