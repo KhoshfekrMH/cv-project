@@ -4,6 +4,61 @@
   box-sizing: border-box;
 }
 
-header {
+.fontImportantText {
   font-family: "Bree Serif", serif;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav-link {
+  text-decoration: none;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.slider-text {
+  font-size: 100px;
+  font-weight: bold;
+}
+.slider-text-job {
+  text-decoration: underline;
+  text-decoration-color: red;
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  div #Home {
+    text-align: center;
+  }
+
+  .slider-text {
+    font-size: 24px;
+  }
+
+  .slider-text-job {
+    font-size: 18px;
+  }
+
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
 }
