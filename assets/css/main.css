@@ -53,17 +53,88 @@ h1 {
   font-size: 50px;
 }
 
+#htmlCssProgress .progress-bar {
+  animation: loadingProgressHtml 3s normal forwards,
+    1s linear infinite progress-bar-stripes;
+  background-color: rgb(202, 111, 14);
+}
 #bootstrapProgress .progress-bar {
+  animation: loadingProgressBootstrap 3s normal forwards,
+    1s linear infinite progress-bar-stripes;
   background-color: purple;
 }
 #jsProgress .progress-bar {
+  animation: loadingProgressJs 3s normal forwards,
+    1s linear infinite progress-bar-stripes;
   background-color: rgb(170, 170, 84);
 }
 #reactProgress .progress-bar {
+  animation: loadingProgressReact 3s normal forwards,
+    1s linear infinite progress-bar-stripes;
   background-color: rgb(24, 162, 222);
 }
 #wordpressProgress .progress-bar {
+  animation: loadingProgressWordpress 3s normal forwards,
+    1s linear infinite progress-bar-stripes;
   background-color: rgb(34, 34, 34);
+}
+#wordpressProgress .progress-bar {
+  animation: loadingProgressWordpress 3s normal forwards,
+    1s linear infinite progress-bar-stripes;
+  background-color: rgb(34, 34, 34);
+}
+#designProgress .progress-bar {
+  animation: loadingProgressDesign 3s normal forwards,
+    1s linear infinite progress-bar-stripes;
+  background-color: #7a2ee6;
+}
+@keyframes loadingProgressHtml {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes loadingProgressBootstrap {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes loadingProgressJs {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes loadingProgressReact {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes loadingProgressWordpress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes loadingProgressDesign {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
 }
 
 @media (max-width: 768px) {
