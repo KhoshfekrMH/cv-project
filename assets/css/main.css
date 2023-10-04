@@ -137,6 +137,33 @@ h1 {
   }
 }
 
+.downloadButton {
+  position: relative;
+  height: 90px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(45deg, #03a9f4, #f441a5);
+}
+.downloadButton:hover {
+  animation: shadowAnimation 1s infinite alternate;
+  color: white;
+}
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 0 0 20px 10px rgba(3, 169, 244, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 20px 10px rgba(244, 65, 165, 0.7);
+  }
+}
+
 @media (max-width: 768px) {
   div #Home {
     text-align: center;
