@@ -164,6 +164,46 @@ h1 {
   }
 }
 
+.timeline {
+  position: relative;
+  padding: 40px 0;
+}
+.timeline-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 40px;
+  display: flex;
+}
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #03a9f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline-icon i {
+  color: white;
+}
+.timeline-content {
+  margin-left: 80px;
+}
+.timeline-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.timeline-description {
+  margin-top: 10px;
+}
+.timeline-date {
+  color: #888;
+  font-size: 16px;
+}
+
 @media (max-width: 768px) {
   div #Home {
     text-align: center;
